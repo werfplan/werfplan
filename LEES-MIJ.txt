@@ -1,0 +1,14 @@
+WerfPlan als app online zetten
+==============================
+Zet ALLE bestanden uit deze map (dus niet de map zelf) op een plek met https, bijvoorbeeld:
+ - Netlify Drop (netlify.com/drop): sleep deze map in het venster, met een gratis account blijft de site staan.
+ - GitHub Pages: maak een repository, upload deze bestanden, zet onder Settings > Pages de hoofdmap aan.
+ - Je eigen website: upload de bestanden naar een map, bijvoorbeeld bedrijf.nl/werfplan/
+
+Installeren (Chrome of Edge op een computer)
+ 1. Open het adres van je site.
+ 2. Klik rechts in de adresbalk op het installatiesymbool, of kies menu > Opslaan en delen > Als app installeren.
+ 3. Daarna staat WerfPlan in je startmenu met het logo, werkt het offline en opent een dubbelklik op een .werfplan-bestand de app.
+
+Een nieuwe versie uitrollen
+ Vervang index.html op de site en verhoog in sw.js het nummer bij V (werfplan-v1 wordt werfplan-v2).
