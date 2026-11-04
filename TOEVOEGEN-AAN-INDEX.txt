@@ -1,0 +1,18 @@
+Plak dit in de <head> van je index.html:
+
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+
+Plak dit vlak voor </body> in je index.html:
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('./sw.js').catch(function () {});
+    });
+  }
+</script>
+
+Zet daarna manifest.webmanifest, sw.js en de map icons/ in dezelfde map als index.html
+(in je repo-root van werfplan), commit en push. Na ~1 minuut staat het live.
